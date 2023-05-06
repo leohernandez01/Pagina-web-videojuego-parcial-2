@@ -5,70 +5,66 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <!--Titulo de la pagina-->
-        <title>Proyecto tetris</title>
-        <!-- Icono de la pagina-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <title>Proyecto Tetris</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/icon_tetris.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-
+    <style>
+        body {
+            background-image: url("https://cdn.discordapp.com/attachments/994863997113352252/1102993634292412446/peakpx.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
     <body>
-        
-        <!--Barra de navegación responsiva-->
+        <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-             <!--Contenedor de la barra de navegación-->
             <div class="container px-5">
-                  <!--Marca o texto a la izquierda-->
                 <a class="navbar-brand" href="#!">Tetris</a>
-                <!--Boton para ver el menu en celulares-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                 <!--Opciones del menu-->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <!--Lista de opciones-->
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://github.com/leohernandez01/Pagina-web-videojuego-parcial-2">Github</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Youtube</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://github.com/leohernandez01/Pagina-web-videojuego-parcial-2">GitHub</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://www.youtube.com/channel/UC78ArxGRlW1hGn9KNpKWBdQ">YouTube</a></li>
 
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <!-- Contenido de la pagina-->
+        <!-- Page Content-->
         <div class="container px-4 px-lg-5">
-            <!--Contenedor de imagen y bloque a la izquierda-->
+            <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <!--Imagen de la izquierda-->
                 <div class="col-lg-6"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://nerdbacon.com/wp-content/uploads/2014/09/tetris-logo.jpg" alt="..." /></div>
-               <!--Texto de la derecha-->
                 <div class="col-lg-5 text-center">
-                    <!--Titulo-->
-                    <h1 class="font-weight-light ">Bienvenidos</h1>
-                      <!--Texto debajo-->
-                    <p>a mi nueva empresa de videojuegos retro, me dedico a desarrollar páginas web para que los usuarios puedan disfrutar de los videojuegos, a comparación de otras empresas, mis páginas están hechas de la forma más eficiente posible para que el usuario tenga la facilidad de navegar y tener la mejor experiencia. </p>
-                      <!--Botón azul-->
-                    <a class="btn btn-primary" href="#!">Jugar ahora!</a>
+                    <h1 class="font-weight-light text-white">Bienvenidos</h1>
+                    <div class="card mb-3 text-white bg white my-2 py-1 text-center">
+                        <div class="card-body">
+                    <p class="text-black m-0 h5">Les presento mi nueva página de videjuegos retro, me dedico a desarrollar páginas web para que los usuarios puedan disfrutar de estos videojuegos, a comparacion de otras páginas, esta esta hecha de la forma mas eficiente posible para que el usuario tenga la facilidad de navegar y tener la mejor experiencia.</p>
+                   </div>
+                    <a class="btn btn-primary btn-lg" href="game.html" target="_blank" >Jugar ahora!</a>
                 </div>
-                
             </div>
-
-            <!-- Tarjeta de presentación-->
+            <!-- Call to Action-->
             <div class="card text-white bg-black my-5 py-4 text-center">
-                <!-- Texto del cuadro-->
-                <div class="card-body"><p class="text-white m-0 h5">Mi nombre es Leonardo Hernandez y soy el creador de esta página, estoy cursando la preparatoria en la escuela fray angélico campeche en sexto semestre, espero que les guste mi página</p></div>
+                <div class="card-body"><p class="text-white m-0">Mi nombre es Leonardo Hernandez y soy el creador de esta página, estoy cursando la preparatoria en la escuela Fray Angélico en sexto semestre, espero que les guste y se diviertan jugado.</p></div>
             </div>
-
-
-            <!--Tarjetas con fotografias-->
-            <div class="row gx-4 gx-lg-5 mx-auto">
+            <!-- Content Row-->
+            <div class="row gx-4 gx-lg-5">
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <!--Titulo de la tarjeta-->
-                            <h2 class="card-title">Consejos para mejorar en tetris</h2>
-                             <!--El texto-->
-                            <p class="card-text">Trata de crear lineas completas en la parte inferior de la pantalla para tener mas espacio para maniobrar, Usa las teclas de flechas para rotar las piezas y moverlas a la izquierda o a la derecha, No te preocupes si no puedes encajar todas las piezas; aveces es mejor dejar huecos para futuras piezas.</p>
+                            <h2 class="card-title">Consejos para ser mejor</h2>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Trata de crear líneas completas en la parte inferior de la pantalla para tener más espacio para maniobrar</li>
+                                    <li>Usa las teclas de flecha para rotar las piezas y moverlas a la izquierda o derecha</li>
+                                    <li>No te preocupes si no puedes encajar todas las piezas; a veces es mejor dejar huecos para futuras piezas.</li>
+                                </ul> 
+                            </p>
+                            <img class="card-img bottom img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Tetris_I.svg" alt="card image cap">
                         </div>
                         
                     </div>
@@ -76,35 +72,72 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Beneficios de jugar a Tetris</h2>
-                            <p class="card-text">La Mind research network llevó a cabo un estudio que demostró que el Tetris tiene el poder de mejorar las habilidades mentales y de estimular las zonas azules del cerebro, relacionadas con el pensamiento crítico, la optimización del lenguaje y la coordinacion. </p>
+                            <h2 class="card-title">Beneficios de jugarlo</h2>
+                            <p class="card-text">La Mind Research Network llevó a cabo un estudio que demostró que el Tetris tiene el poder de mejorar las habilidades mentales y de estimular las zonas azules del cerebro, relacionadas con el pensamiento crítico, la optimización del lenguaje y la coordinación</p>
+                            <img class="card-img bottom img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Tetris_S.svg" alt="card image cap">
                         </div>
-                        
                         
                     </div>
                 </div>
-
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
                             <h2 class="card-title">¿Por qué se volvio tan popular?</h2>
-                            <p class="card-text">Este juego es atractivo porque utiliza formas geometricas faciles de recordar y además resulta intelectualmente desafiante</p>
+                            <p class="card-text">Este juego es atractivo, porque utiliza formas geometricas faciles de recordar y además resulta intelectualmente desafiante.</p>
+                            <img class="card-img bottom img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Tetris_T.svg" alt="card image cap">
                         </div>
-                        
                         
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="card text-white bg-white my-5 py-4 text-center">
+            <div class="card-body"><p class="text-black m-0 h1">Capturas de pantalla</p></div>
+        </div>
 
+        <div class="row gx-4 gx-lg-5 mx-auto">
 
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top img-fluid" src="https://cdn.discordapp.com/attachments/1073415355420127353/1103475611726528651/inicio_tetris.jpg" alt="Card image cap">
 
+                    <div class="card-body">
 
+                        <h2 class="card-text mx-auto text-center">Inicio
+                            
+                        </h1>
+                    </div>
+                </div>
+            </div>
 
+        
 
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top img-fluid" src="https://cdn.discordapp.com/attachments/1073415355420127353/1103475612053672026/juego_tetris.jpg" alt="Card image cap">
 
+                    <div class="card-body">
 
+                        <h2 class="card-text mx-auto text-center">Partida
+                            
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top img-fluid" src="https://cdn.discordapp.com/attachments/1073415355420127353/1103475612368252998/game_over_tetris.jpg" alt="Card image cap">
+
+                    <div class="card-body">
+
+                        <h2 class="card-text mx-auto text-center">Game over
+                            
+                        </h1>
+                    </div>
+                </div>
+            </div>
         
         <!-- Footer-->
         <footer class="py-3 bg-dark">
