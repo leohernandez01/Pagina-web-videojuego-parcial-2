@@ -60,6 +60,26 @@ function moveDown(){
     
 }
 
+function getScore(level)  {
+    if (level==1)
+    {
+        return levelTargets.level1.score
+    }
+    else if (level==2)
+    {
+        return levelTargets.level2.score
+    }
+    else if (level==3)
+    {
+        return levelTargets.level3.score
+    }
+    else if (level==4)
+    {
+        return levelTargets.level4.score
+    }
+
+}
+
 
 var VarkeyDownHandler = function keyDownHandler(event){  
       
@@ -295,26 +315,26 @@ function drawRules(){
     ctx.font = "13px Raleway";    
     ctx.textAlign = "left";
     ctx.fillText("1 linea:   40 puntos", 30,110);      
-    ctx.fillText("2 lineas:   100 puntos", 30,126);      
-    ctx.fillText("3 lineas:   400 puntos", 30,141);      
-    ctx.fillText("4 lineas:   1200 puntos", 30,156); 
+    ctx.fillText("2 lineas:   80 puntos", 30,126);      
+    ctx.fillText("3 lineas:   160 puntos", 30,141);      
+    ctx.fillText("4 lineas:   320 puntos", 30,156); 
     ctx.font = "15px Chelsea Market";    
     ctx.fillText("Tetris:  4 lineas", 30,175); 
     ctx.font = "20px Caveat";           
     ctx.fillText("Niveles:", 30,230); 
     ctx.font = "13px Raleway";          
-    ctx.fillText("N1: 1 Tetris o 1200 puntos", 30, 256);      
-    ctx.fillText("N2: 2 Tetris o 3600 puntos", 30,271);      
-    ctx.fillText("N3: 3 Tetris o 7200 puntos", 30,286);      
-    ctx.fillText("N4: 4 Tetris o 12000 puntos", 30,301); 
+    ctx.fillText("N1: 200 puntos", 30, 256);      
+    ctx.fillText("N2: 600 puntos", 30,271);      
+    ctx.fillText("N3: 900 puntos", 30,286);      
+    ctx.fillText("N4: 1200 puntos", 30,301); 
     ctx.font = "20px Caveat";           
     ctx.fillText("Como ganar:", 30,350); 
     ctx.font = "13px Raleway";          
     ctx.fillText("Alcanza una puntuación de:", 30, 376);      
-    ctx.fillText("Score 12000 puntos", 88, 396);  
+    ctx.fillText("Score 1200 puntos", 88, 396);  
     nextCtx.fillStyle="white";    
     nextCtx.font = "15px Chelsea Market";    
-    nextCtx.fillText("Siguiente pieza", 20,30); 
+    nextCtx.fillText("Siguiente pieza", 20,50); 
     
 
 }
@@ -328,10 +348,10 @@ async function drawLevels(level){
     ctx.font = "30px Chelsea Market";    
     ctx.fillText(`Nivel ${level}`, canvas.width/2,canvas.height/2);   
     ctx.font = "normal normal 20px Caveat";              
-    ctx.fillText(`Objetivo: ${level} Tetris`, canvas.width/2,canvas.height/2 + 40); 
+    ctx.fillText(`Objetivo: ${getscore(level)} puntos`, canvas.width/2,canvas.height/2 + 40); 
     ctx.font = "normal normal 12px Verdana";                   
     ctx.fillText("(Tetris: 4 Lineas)", canvas.width/2,canvas.height/2 + 70);   
-    await sleep(2000);
+    await sleep(4000);
         
     document.addEventListener('keydown',   VarkeyDownHandler);
     mobile__contorls.addEventListener('click',mediaEventHandler);

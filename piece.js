@@ -33,9 +33,9 @@ const shapes = [
 const fixedScores = [
     0,
     40,
-    100,
-    300,
-    1200
+    80,
+    160,
+    320
 ];
 
 const levels = [
@@ -46,10 +46,10 @@ const levels = [
 ]
 
 const levelTargets= {
-    level1:{tcount: 1,  score:1* fixedScores[4]},
-    level2:{tcount: 3,  score:3* fixedScores[4]},
-    level3:{tcount: 6,  score:6* fixedScores[4]},
-    level4:{tcount: 10, score:10*fixedScores[4]}
+    level1:{tcount: 1,  score:200},
+    level2:{tcount: 3,  score:600},
+    level3:{tcount: 6,  score:900},
+    level4:{tcount: 10, score:1200}
 }
 
 const colors =[
