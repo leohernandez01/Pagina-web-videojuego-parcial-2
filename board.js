@@ -80,15 +80,14 @@ class Board{
                 well.unshift(Array(wellColumns).fill(0));
             }    
 
-            //audio
-            // if(lines.length==4){
-            //     audio_fourlines.currentTime=0
-            //     audio_fourlines.play()
-            // }else{
-            //     //play oneline one
-            //     audio_oneline.currentTime=0
-            //     audio_oneline.play()
-            // }
+            audio
+            if(lines.length==4){
+                audio_tetris.currentTime=0
+                audio_tetris.play()
+            }else{
+                audio_linea.currentTime=0
+                audio_linea.play()
+            }
 
 
             //when a tetris is made

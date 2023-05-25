@@ -17,9 +17,12 @@ var mobile__contorls_element = document.querySelector('#mobile__contorls')
 var next__block_element = document.querySelector('#next-block')
 //################################################################################# Globals
 //################################################################################# audio files
-const audio_oneline = document.querySelector('#oneline')
-const audio_fourlines = document.querySelector('#fourlines')
-const audio_gameover = document.querySelector('#gameover')
+const audio_click = document.querySelector('#click')
+const audio_landing = document.querySelector('#landing')
+const audio_linea = document.querySelector('#linea')
+const audio_pause= document.querySelector('#pause')
+const audio_rotate = document.querySelector('#rotar')
+const audio_tetris = document.querySelector('#tetris')
 //################################################################################# audio files
 
 ctx.canvas.width = singleBlockSize * wellColumns;
@@ -49,6 +52,9 @@ function moveDown(){
         bp = board.piece;    
         p = moves.down(bp)                        
         if(board.piece.reachedBottom(p)){
+
+            audio_landing.currentTime=0
+            audio_landing.play()
             board.piece.freeze(p);
             board.getNewPiece();            
             
@@ -88,6 +94,9 @@ var VarkeyDownHandler = function keyDownHandler(event){
         p = moves.down(bp)        
                 
         if(board.piece.reachedBottom(p)){
+
+            audio_landing.currentTime=0
+            audio_landing.play()
             board.piece.freeze(p);
             board.getNewPiece();            
             
@@ -117,6 +126,9 @@ var VarkeyDownHandler = function keyDownHandler(event){
         }
         board.draw();
     }else if(event.key == 'ArrowUp'){
+
+        audio_rotate.currentTime=0
+            audio_rotate.play()
         
         bp = moves.up(bp)
         if(board.piece.reachedBottom(bp) == 0){
@@ -155,9 +167,14 @@ function playButtonHandler(){
         well = board.getEmptyBoard();
         document.addEventListener('keydown',   VarkeyDownHandler);
         mobile__contorls.addEventListener('click',mediaEventHandler);
+        audio_click.currentTime=0
+        audio_click.play()
         animate()
     }else
-    if(playButton.textContent=='Pausa'){                
+    if(playButton.textContent=='Pausa'){ 
+        
+        audio_pause.currentTime=0
+        audio_pause.play()
         pauseGame();
     }else
     if(playButton.textContent=='Continuar'){
@@ -348,7 +365,7 @@ async function drawLevels(level){
     ctx.font = "30px Chelsea Market";    
     ctx.fillText(`Nivel ${level}`, canvas.width/2,canvas.height/2);   
     ctx.font = "normal normal 20px Caveat";              
-    ctx.fillText(`Objetivo: ${getscore(level)} puntos`, canvas.width/2,canvas.height/2 + 40); 
+    ctx.fillText(`Objetivo: ${getScore(level)} puntos`, canvas.width/2,canvas.height/2 + 40); 
     ctx.font = "normal normal 12px Verdana";                   
     ctx.fillText("(Tetris: 4 Lineas)", canvas.width/2,canvas.height/2 + 70);   
     await sleep(4000);
