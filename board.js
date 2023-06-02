@@ -80,7 +80,6 @@ class Board{
                 well.unshift(Array(wellColumns).fill(0));
             }    
 
-            audio
             if(lines.length==4){
                 audio_tetris.currentTime=0
                 audio_tetris.play()
